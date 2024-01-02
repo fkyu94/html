@@ -1,0 +1,102 @@
+<html>
+    <head><title>明新科技大學資訊管理系</title>
+    <meta charset="utf-8">
+    <style>
+        *{
+            margin:0;
+            color:gray;
+            /*font-size: 50px;*/
+            /*text-align:center;*/
+        }
+        /* top */
+        .top{
+             background-color: white;
+        }
+        .top .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin:10px;
+        }
+        .top .logo{
+            /*border:1px solid red;*/
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .top .logo img{
+            width: 100px;
+            vertical-align: middle;
+        }
+        .top .top-nav{
+            //border:1px solid red;
+            font-size: 25px;
+            font-weight: bold;       
+        }
+        .top .top-nav a{
+            text-decoration: none;
+        }
+        /* nav */
+        .nav {
+            background-color:white;
+            height:100px;
+        }
+        /* slider */
+        .slider{
+            background-color: black;
+            height:200px;
+        }
+        /* banner*/
+        .banner{
+            background-color:white;
+            height:200px;
+        }
+        /*faculty*/
+        .faculty {
+          background-color: black;      
+          height:200px;
+        }
+        .contact {
+            background-color:white;
+            height:200px;
+        }
+        /*footer*/
+        .footer{
+            background-color: black;      
+            height:100px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="top">
+            <div class="container">
+                <div class="logo">
+                  <img src="https://github.com/shhuangmust/html/raw/111-1/IMMUST_LOGO.JPG">
+                  明新科技大學資訊管理系
+                </div>
+                <div class="top-nav">
+                  <a href=>明新科大</a>
+                  <a href=>明新管理學院</a>
+                  <a href=>登入</a>
+                </div>
+              </div>
+        </div>
+        <div class="nav">   
+            nav
+        </div>
+        <div class="slider">
+            slider
+        </div>
+        <div class="banner">
+            banner
+        </div>
+        <div class="faculty">
+            faculty
+        </div>
+        <div class="contact">
+            contact
+        </div>
+        <div class="footer">
+            footer
+        </div>
+     </body>
+</html>
