@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        #slider {
+            position: relative;
+            max-width: 800px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        #slider img {
+            width: 100%;
+            display: none;
+        }
+
+        #info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Webpage</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <select onchange="window.location.href=this.value;">
+            <option value="#">Select a Site</option>
+            <option value="https://www.google.com">Google</option>
+	    <option value="https://www.yahoo.com">Yahoo</option>
+            <!-- Add more dropdown options as needed -->
+        </select>
+    </nav>
+
+    <div id="slider">
+        <img src="1.jpg" alt="Image 1">
+        <img src="2.jpg" alt="Image 2">
+        <img src="3.jpg" alt="Image 3">
+        <!-- Add more images as needed -->
+    </div>
+
+    <div id="info">
+        <h2>Welcome to My Webpage</h2>
+        <p>This is a simple one-page website created using HTML and CSS.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Webpage. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for image slider (auto change every 5 seconds)
+        let currentIndex = 0;
+        const images = document.querySelectorAll('#slider img');
+
+        function showImage(index) {
+            images.forEach((img, i) => {
+                img.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        }
+
+        setInterval(nextImage, 5000);
+    </script>
+
+</body>
+</html>
